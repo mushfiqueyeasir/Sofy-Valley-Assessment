@@ -120,7 +120,7 @@ const LeadsPage = () => {
         <Table data={leads} />
       </div>
 
-      <div className="flex justify-end p-4 gap-6">
+      <div className="w-[83%] absolute bottom-0 bg-slate-100 bottom-0 flex justify-end p-4 gap-6 ">
         <div>
           <input
             onBlur={handlePageSize}
@@ -131,7 +131,7 @@ const LeadsPage = () => {
             defaultValue={pageSize}
           />
         </div>
-        <div className="flex gap-4">
+        <div className="flex gap-4 ">
           <button onClick={handelPageBack} className="btn btn-sm btn-outline">
             {"<"}
           </button>
