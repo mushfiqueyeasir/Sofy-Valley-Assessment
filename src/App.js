@@ -21,11 +21,39 @@ function App() {
           }
         >
           <Route index element={<Navigate to="leads" />} />
-          <Route path="dashboard" element={<h2>This IS Dashboard</h2>} />
+          <Route
+            path="dashboard"
+            element={
+              <div className="flex justify-center items-center h-[100vh]">
+                <h2 className="text-3xl">This is Dashboard</h2>
+              </div>
+            }
+          />
           <Route path="leads" element={<LeadsPage />} />
-          <Route path="customer" element={<h2>This IS Customer</h2>} />
-          <Route path="sales" element={<h2>This IS Sales</h2>} />
-          <Route path="expense" element={<h2>This IS Expense</h2>} />
+          <Route
+            path="customer"
+            element={
+              <div className="flex justify-center items-center h-[100vh]">
+                <h2 className="text-3xl">This is Customer</h2>
+              </div>
+            }
+          />
+          <Route
+            path="sales"
+            element={
+              <div className="flex justify-center items-center h-[100vh]">
+                <h2 className="text-3xl">This is Sales</h2>
+              </div>
+            }
+          />
+          <Route
+            path="expense"
+            element={
+              <div className="flex justify-center items-center h-[100vh]">
+                <h2 className="text-3xl">This is Expense</h2>
+              </div>
+            }
+          />
         </Route>
         <Route
           path="/login"
