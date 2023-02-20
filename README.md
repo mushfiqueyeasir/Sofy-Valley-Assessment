@@ -1,4 +1,4 @@
-## The Api was provided HTTP but the free hosting site only provides HTTPS, So the app won't Run in Live server due to Mixed Content Error.
+## The Api was provided HTTP but the free hosting site only provides HTTPS domain, So the app won't Run in Live server due to Mixed Content Error.
 
 
 ## Available Scripts
