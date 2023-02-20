@@ -3,7 +3,7 @@
 ## Must Follow this Procedure to Run the Live Server
 
 <img src="./src/assets/step1.jpg">
-<img src="./src/assets/step2.jpg">
+<img src="./src/assets/step2.png">
 
 
 ## Available Scripts
