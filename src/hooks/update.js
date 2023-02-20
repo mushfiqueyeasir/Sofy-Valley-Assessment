@@ -1,16 +1,7 @@
 import { toast } from "react-toastify";
 import { getToken } from "../utility/Constant";
 
-export const updateData = ({
-  endPoint,
-  data,
-  method,
-  login,
-  navigate,
-  modalCloseID,
-  formReset,
-  bulkReset,
-}) => {
+export const updateData = ({ endPoint, data, method, login, navigate }) => {
   const requestOptions = {
     method: method,
     headers: {
@@ -44,15 +35,6 @@ export const updateData = ({
           progress: undefined,
           theme: "light",
         });
-        if (bulkReset) {
-          bulkReset();
-        }
-        if (modalCloseID) {
-          document.getElementById(modalCloseID).checked = false;
-        }
-        if (formReset) {
-          formReset();
-        }
       }
 
       if (login) {

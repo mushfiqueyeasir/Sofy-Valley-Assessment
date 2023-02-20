@@ -1,6 +1,12 @@
 import React from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const NavBar = ({ handleNameChange }) => {
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    sessionStorage.clear();
+    navigate("/login");
+  };
   return (
     <div className="bg-white ml-1">
       <div className="navbar container mx-auto py-2">
@@ -25,7 +31,7 @@ const NavBar = ({ handleNameChange }) => {
               className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Logout</a>
+                <button onClick={handleLogout}>Logout</button>
               </li>
             </ul>
           </div>
