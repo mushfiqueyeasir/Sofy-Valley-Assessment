@@ -1,0 +1,31 @@
+.customTable {
+    display: table;
+}
+.customTable {
+    position: relative;
+    text-align: left;
+}
+
+.customTable :where(th, td) {
+    white-space: nowrap;
+    padding: 1rem/* 16px */;
+    vertical-align: middle;
+}
+.customTable :where(thead) :where(th) {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+}
+
+
+.customTable:where(:not(.customTable-zebra)) :where(thead, tbody, tfoot) :where(tr:not(:last-child) :where(th, td)) {
+    border-bottom-width: 1px;
+    --tw-border-opacity: 1;    
+}
+.customTable :where(thead) :where(th, td) {
+    --tw-bg-opacity: 1;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem/* 16px */;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
